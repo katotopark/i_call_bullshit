@@ -33,10 +33,10 @@ class App extends Component {
         <Row>
           {
             this.state.tweets.map((tweet,index) =>
-            <Col xs={12} sm={6} md={4} lg={3} key={index}>
-              <CardComponent tweet={tweet}/>
-            </Col>
-          )}
+              <Col xs={12} sm={6} md={4} lg={3} key={index}>
+                <CardComponent tweet={tweet}/>
+              </Col>)
+          }
         </Row>
       </div>
     )
