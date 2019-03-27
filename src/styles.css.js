@@ -14,23 +14,26 @@ export const cardStyle = {
   borderRadius: '0px',
   border: '0px',
   backgroundColor: '#9cf0fb',
-  boxShadow: '5px 5px #385377',
+  boxShadow: '12px 7px #385377',
   width: '250px',
   height: '200px',
   margin: '0px auto 15px auto',
   fontFamily: 'Didact Gothic, sans-serif',
-  fontSize: '1.2rem',
   color: 'rgb(172, 159, 130)',
   overflow: 'scroll',
+  position: 'relative'
 }
 
 export const emojiStyle = {
   float: 'left',
-  padding: '5px'
+  padding: '5px',
+  color: 'transparent',
+  textShadow: '0 0 0 #f4a9b3',
+  fontSize: '4rem'
 }
 
 export const hashStyle = {
-   fontSize: '4.5rem',
+   fontSize: '4rem',
    color: '#e4bbc1',
    fontFamily: 'inherit'
 }

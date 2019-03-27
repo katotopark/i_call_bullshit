@@ -1,20 +1,14 @@
 import React from 'react'
-import Twemoji from 'react-twemoji'
-import { titleStyle, hashStyle, emojiStyle } from '../styles.css'
+import { titleStyle, emojiStyle } from '../styles.css'
 
 class TitleComponent extends React.Component {
   parseEmoji(emoji) {
-    return (
-      <Twemoji options={{ className: 'twemoji' }} style={emojiStyle}>
-        <span>{emoji}</span>
-      </Twemoji>
-    )
+    return <p style={emojiStyle}>{emoji}</p>
   }
 
   render() {
     return (
       <div style={titleStyle}>
-        <h5 style={hashStyle}>#</h5>
         {this.parseEmoji('📞')}
         {this.parseEmoji('🐂')}
         {this.parseEmoji('💩')}
