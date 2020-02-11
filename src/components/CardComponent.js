@@ -49,7 +49,7 @@ class CardComponent extends React.Component {
       textShadow: '0 0 0 #f4a9b3',
       fontSize: '1.2rem'
     }
-
+  
     return (
       <Card style={cardStyle}>
         <CardBody style={bodyStyle}>

@@ -17,6 +17,7 @@ class App extends Component {
   async fetchTweets() {
     const res = await fetch('/api/')
     const resJSON = await res.json()
+    console.log('results are',resJSON)
     const tweets = resJSON.statuses.map(t => {
       const tweet = {
         user: t.user.screen_name,
